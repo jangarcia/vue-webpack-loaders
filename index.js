@@ -15,14 +15,13 @@ module.exports = [
 		loader: 'babel-loader',
 		options: {
 			"presets": [
-				["env", { "modules": false }],
-				"stage-2"
+				["env", { "modules": false }]
 			],
 			"plugins": ["transform-runtime"],
 			"comments": false,
 			"env": {
 				"test": {
-					"presets": ["env", "stage-2"],
+					"presets": ["env"],
 					"plugins": [ "istanbul" ]
 				}
 			}
